@@ -1,0 +1,80 @@
+% 指定文档的类型
+\documentclass{article}
+
+% 引入一些包
+\usepackage{ctex}
+
+
+\begin{document}
+
+% 标题,作者,以及显示今天的时间
+\title{Learning Latex}
+\author{Fulei}
+\date{\today}
+\maketitle
+
+% 列出所有的目录
+% \setcounter{tocdepth}{1} 设置所列出的目录的深度
+\tableofcontents
+
+% 摘要部分
+\newpage
+\begin{abstract}
+你好
+this context is abstract
+\end{abstract}
+
+% 测试多个章节目录
+\newpage % 强制换页
+\section{Introduce}
+\subsection{why}
+why you want to write it
+\subsection{what}
+what you want to do
+\subsection{who}
+who to do it
+
+\newpage
+\section{Relative work}
+this section include what wrok you do 
+
+% 测试一些符号(特殊字符前面加\转义,\\表示换行)
+\newpage
+\section{some special character}
+\$ \& \\ 
+\textbackslash \\
+\~{y} \\
+hello-world \\ 1999--9999 \\ to be---or not \\
+$12-3=9$ \\
+% 测试一些字体
+\textbf{textbf} \\
+% 测试一些字体样式
+\emph{emph} \\% 强调字体
+% \uline{uline} \\%带下划线字体
+% \uwave{uwake} \\%带波浪线字体
+
+\hyphenation{BASIC blar-blar-blar}
+
+\newpage
+\section{paragraph alignment}
+
+\subsection{left}
+\begin{flushleft}
+paragraph which want to left,paragraph which want to left,paragraph which want to left,paragraph which want to left,paragraph which want to left,paragraph which want to left,paragraph which want to left\\paragraph which want to left,paragraph which want to left,paragraph which want to left,paragraph which want to left,paragraph which want to left,
+\end{flushleft}
+
+\subsection{right}
+\begin{flushright}
+paragraph which want to right,paragraph which want to right,paragraph which want to right,paragraph which want to right,paragraph which want to right,paragraph which want to right\\paragraph which want to right,paragraph which want to right,paragraph which want to right,paragraph which want to right,paragraph which want to right,paragraph which want to right,
+\end{flushright}
+
+\subsection{center}
+\begin{center}
+paragraph which want to center,paragraph which want to center,paragraph which want to center,paragraph which want to center\\paragraph which want to center,paragraph which want to center,paragraph which want to center,paragraph which want to center,paragraph which want to center,paragraph which want to center,
+\end{center}
+
+
+
+\end{document}
+
+
